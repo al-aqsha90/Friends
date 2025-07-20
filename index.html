@@ -829,6 +829,11 @@
         vketik8 = ""; aktipesan8();
       }
     }
+    document.addEventListener('click', () => {
+    const audio = document.getElementById('bg-music');
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
 
   </script>
 </body>
